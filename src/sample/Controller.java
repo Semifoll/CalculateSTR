@@ -1,145 +1,142 @@
 package sample;
 
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.Tab;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 
 public class Controller {
 
     @FXML
-    private Tab simpleTab_Button;
+    private Button eButtonPlus;
 
     @FXML
-    private AnchorPane simpleTab;
+    private Button eButtonMinus;
 
     @FXML
-    private Button sTab_Button_1;
+    private TextField eTextField;
 
     @FXML
-    private Button sTab_Button_2;
+    private Button eButton3;
 
     @FXML
-    private Button sTab_Button_Plus;
+    private Button eButton6;
 
     @FXML
-    private Button sTab_Button_Minus;
+    private Button eButton9;
 
     @FXML
-    private TextField sTabTextField;
+    private Button eButtonMultiply;
 
     @FXML
-    private Button sTab_Button_3;
+    private Button eButtonDivide;
 
     @FXML
-    private Button sTab_Button_4;
+    private Button eButtonEqually;
 
     @FXML
-    private Button sTab_Button_5;
+    private Button eButtonOpen;
 
     @FXML
-    private Button sTab_Button_6;
+    private Button eButtonClose;
 
     @FXML
-    private Button sTab_Button_7;
+    private Button eButton1;
 
     @FXML
-    private Button sTab_Button_8;
+    private Button eButton2;
 
     @FXML
-    private Button sTab_Button_9;
+    private Button eButton4;
 
     @FXML
-    private Button sTab_Button_0;
+    private Button eButton5;
 
     @FXML
-    private Button sTab_Button_Multiply;
+    private Button eButton7;
 
     @FXML
-    private Button sTab_Button_Divide;
+    private Button eButton8;
 
     @FXML
-    private Button sTab_Button_Equally;
+    private Button eButton0;
 
     @FXML
-    private Button sTab_Button_Comma;
+    private Button eButtonComma;
 
     @FXML
-    private ListView<?> sTab_Button_List;
+    private Button eButtonCancel;
 
     @FXML
-    private Button sTab_Button_Delete;
+    private Button eButtonDelete;
 
     @FXML
-    private Tab expressionTab_Button;
+    private TextArea eTextArea;
 
     @FXML
-    private AnchorPane expressionTab;
+    void onActionButtonAddNumberToTextField(ActionEvent event) {
+
+        String c = eTextField.getText();
+        Button d = (Button)event.getSource();
+        String e = d.getId();
+        eTextField.setText(c+e.charAt(e.length()-1));
+    }
 
     @FXML
-    private Button eTab_Button_Plus;
+    void onActionButtonBracketFinish(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = ")";
+        eTextField.setText(c+e);
+    }
 
     @FXML
-    private Button eTab_Button_Minus;
+    void onActionButtonBracketStart(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = "(";
+        eTextField.setText(c+e);
+    }
 
     @FXML
-    private TextField eTab_Button_Text_Field;
+    void onActionButtonComma(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = ",";
+        eTextField.setText(c+e);
+    }
 
     @FXML
-    private Button eTab_Button_3;
+    void onActionButtonDivide(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = "/";
+        eTextField.setText(c+e);
+    }
+
+
 
     @FXML
-    private Button eTab_Button_6;
+    void onActionButtonMinus(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = "-";
+        eTextField.setText(c+e);
+    }
 
     @FXML
-    private Button eTab_Button_8;
+    void onActionButtonMultiply(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = "*";
+        eTextField.setText(c+e);
+    }
 
     @FXML
-    private Button eTab_Button_Multiply;
+    void onActionButtonPlus(ActionEvent event) {
+        String c = eTextField.getText();
+        String e = "+";
+        eTextField.setText(c+e);
+    }
 
     @FXML
-    private Button eTab_Button_Divide;
+    void onActionButtonExpression(ActionEvent event) {
 
-    @FXML
-    private Button eTab_Button_Equally;
-
-    @FXML
-    private Button eTab_Button_Open;
-
-    @FXML
-    private Button eTab_Button_Close;
-
-    @FXML
-    private Button eTab_Button_1;
-
-    @FXML
-    private Button eTab_Button_2;
-
-    @FXML
-    private Button eTab_Button_4;
-
-    @FXML
-    private Button eTab_Button_5;
-
-    @FXML
-    private Button eTab_Button_7;
-
-    @FXML
-    private Button eTab_Button_0;
-
-    @FXML
-    private Button eTab_Button_Comma;
-
-    @FXML
-    private Button eTab_Button_Cancel;
-
-    @FXML
-    private Button eTab_Button_Delete;
-
-    @FXML
-    private ListView<?> eTab_Button_List;
-
+    }
 }
-
