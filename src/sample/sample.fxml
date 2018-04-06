@@ -29,9 +29,9 @@
                 <Button fx:id="eButton7" layoutX="41.0" layoutY="196.0" mnemonicParsing="false" onAction="#onActionButtonAddNumberToTextField" prefHeight="47.0" prefWidth="43.0" text="7" />
                 <Button fx:id="eButton8" layoutX="92.0" layoutY="196.0" mnemonicParsing="false" onAction="#onActionButtonAddNumberToTextField" prefHeight="47.0" prefWidth="43.0" text="8" />
                 <Button fx:id="eButton0" layoutX="92.0" layoutY="251.0" mnemonicParsing="false" onAction="#onActionButtonAddNumberToTextField" prefHeight="47.0" prefWidth="43.0" text="0" />
-                <Button fx:id="eButtonComma" layoutX="41.0" layoutY="251.0" mnemonicParsing="false" onAction="#onActionButtonComma" prefHeight="47.0" prefWidth="43.0" text="," />
-                <Button fx:id="eButtonCancel" layoutX="41.0" layoutY="305.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="43.0" text="С" />
-                <Button fx:id="eButtonDelete" layoutX="92.0" layoutY="305.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="43.0" text="&lt;x" />
+                <Button fx:id="eButtonComma" layoutX="41.0" layoutY="251.0" mnemonicParsing="false" onAction="#onActionButtonComma" prefHeight="47.0" prefWidth="43.0" text="." />
+                <Button fx:id="eButtonCancel" layoutX="41.0" layoutY="305.0" mnemonicParsing="false" onAction="#onActionButtonCancel" prefHeight="47.0" prefWidth="43.0" text="С" />
+                <Button fx:id="eButtonDelete" layoutX="92.0" layoutY="305.0" mnemonicParsing="false" onAction="#onActionButtonDelete" prefHeight="47.0" prefWidth="43.0" text="&lt;x" />
                 <TextArea fx:id="eTextArea" layoutX="287.0" layoutY="36.0" prefHeight="316.0" prefWidth="272.0" />
             </children>
         </AnchorPane>
@@ -42,4 +42,3 @@
         </Label>
     </children>
 </AnchorPane>
-
