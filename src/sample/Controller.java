@@ -207,7 +207,11 @@ public class Controller {
     void onActionButtonExpression(ActionEvent event) {
         //если есть еще открывающие скобки.
         if(ARRAY_OF_BRACKET.size()!=0){
-            message("BRACKET does not closed!");
+            String dontClose = "";
+            for(int i = 0; i!= ARRAY_OF_BRACKET.size(); i++){
+                dontClose+=" "+ (i+1) + " on position: " + ARRAY_OF_BRACKET.get(i) + ", ";
+            }
+            message("BRACKET does not closed! Last barket is " + dontClose);
         }else{
             ScriptEngineManager manager = new ScriptEngineManager();
             ScriptEngine engine = manager.getEngineByName("js");
